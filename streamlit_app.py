@@ -53,9 +53,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Header with logo
-logo = Image.open("image.png")
-st.image(logo, width=100)
 
 st.markdown("<h1 class='centered'>Status</h1>", unsafe_allow_html=True)
 
