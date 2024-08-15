@@ -54,7 +54,7 @@ st.markdown(
 )
 
 # Header with logo
-logo = Image.open("/mnt/data/image.png")
+logo = Image.open("image.png")
 st.image(logo, width=100)
 
 st.markdown("<h1 class='centered'>Status</h1>", unsafe_allow_html=True)
