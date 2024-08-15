@@ -10,3 +10,6 @@ st.write(
 
 # En-tête
 st.header("Status")
+
+# Affichage du texte avec Markdown
+st.markdown("MWIII CHAIR : ON  \n MWIII UA : ON")
