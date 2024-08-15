@@ -19,7 +19,7 @@ st.markdown(
     .status-table {
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
+        width: 50%;
     }
     .status-table th, .status-table td {
         padding: 10px;
@@ -37,23 +37,28 @@ st.markdown(
     .status-updating {
         color: #FFA500;
     }
+    .centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
-# Utilisation des colonnes pour l'alignement
-col1, col2 = st.columns([1, 3])
+# Utilisation des colonnes pour le centrage
+col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
     st.markdown("<h1>Status</h1>", unsafe_allow_html=True)
 
 # Status pour MWIII
-st.markdown("<h2>MWIII</h2>", unsafe_allow_html=True)
-
-# Utiliser des colonnes pour aligner le tableau au centre
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
+    st.markdown("<h2>MWIII</h2>", unsafe_allow_html=True)
+
+    # Créer la table de statuts
     mwiii_data = [
         ["IRIS CHAIR + WOOFER", "online"],
         ["IRIS CHAIR + WOOFER V2", "online"],
@@ -62,7 +67,6 @@ with col2:
         ["IRIS PRIVACY PROTECTOR", "online"],
     ]
 
-    # Créer la table de statuts
     st.markdown("<table class='status-table'>", unsafe_allow_html=True)
     st.markdown("<tr><th>Loaders</th><th>Status</th></tr>", unsafe_allow_html=True)
 
@@ -73,16 +77,16 @@ with col2:
     st.markdown("</table>", unsafe_allow_html=True)
 
 # Status pour MW2019
-st.markdown("<h2>MW2019</h2>", unsafe_allow_html=True)
-
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
+    st.markdown("<h2>MW2019</h2>", unsafe_allow_html=True)
+
+    # Créer la table de statuts pour MW2019
     mw2019_data = [
         ["MW19 AIO CHAIR", "online"],
     ]
 
-    # Créer la table de statuts pour MW2019
     st.markdown("<table class='status-table'>", unsafe_allow_html=True)
     st.markdown("<tr><th>Loaders</th><th>Status</th></tr>", unsafe_allow_html=True)
 
