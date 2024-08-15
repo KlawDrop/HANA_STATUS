@@ -60,11 +60,9 @@ with col2:
 
     # Créer la table de statuts
     mwiii_data = [
-        ["IRIS CHAIR + WOOFER", "online"],
-        ["IRIS CHAIR + WOOFER V2", "online"],
-        ["IRIS UA + WOOFER V3", "updating"],
-        ["IRIS AIO + WOOFER", "updating"],
-        ["IRIS PRIVACY PROTECTOR", "online"],
+        ["KURIBOH CHAIR + WOOFER", "online And safe to use"],
+        ["KURIBOH UA + WOOFER V3", "Online (Not safe to use)"],
+        ["KURIBOH AIO + WOOFER", "Online (Not safe for a main)"],
     ]
 
     st.markdown("<table class='status-table'>", unsafe_allow_html=True)
@@ -84,7 +82,7 @@ with col2:
 
     # Créer la table de statuts pour MW2019
     mw2019_data = [
-        ["MW19 AIO CHAIR", "online"],
+        ["MW19 AIO CHAIR", "Offline"],
     ]
 
     st.markdown("<table class='status-table'>", unsafe_allow_html=True)
